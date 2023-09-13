@@ -1,0 +1,17 @@
+@use "abstracts" as * ;
+@use "style" as *  ; 
+
+.Navbar {
+    background-color: $secondary;
+
+    .icon {
+        background-color: transparent;
+    }
+    .links {
+        p {
+           margin-top: auto;
+           margin-bottom: auto;
+        
+        }
+    }
+}

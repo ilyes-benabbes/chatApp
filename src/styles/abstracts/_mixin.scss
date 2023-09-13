@@ -1,0 +1,69 @@
+@use "variables" as * ;
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    padding-left: $gap ;  
+    padding-right: $gap ; 
+  }
+
+  .col-center{
+    @extend .flex-column ; 
+    align-items: center ; 
+  }
+
+
+.flex-row {
+  gap: $gap;
+
+ 
+    display: flex;
+    flex-direction:row; 
+    padding-left: $gap ;  
+    padding-right: $gap ; 
+    &-r {
+      @extend .flex-row ; 
+      margin-right: $mr;}
+
+
+    &-l {
+      @extend .flex-row ; 
+      margin-left: $ml;
+    }
+}
+
+.row-between {
+  justify-content: space-between;
+    @extend .flex-row ; 
+}
+
+  .flex-center-col {
+    @extend .flex-column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-center-horiz {
+    display: flex;
+    justify-content: center;
+  }
+
+//    speparijar asjfkl; sjdkl;fj  
+
+
+
+ .flex-row-space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+.flex-center-vert {
+    display: flex;
+    align-items: center;
+  }
+  
+ 
+  
+
