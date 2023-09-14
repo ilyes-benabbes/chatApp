@@ -1,0 +1,105 @@
+@use "./abstracts/variables" as * ;
+.chat {
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+    flex-grow: 1;
+        .menu {
+                padding: 0px;
+            .callbtn{
+                align-self: center;
+                margin-right: 10px;
+                border-radius: 6px;
+                height: max-content;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: #EFEFFD;
+                    img {
+                        background-color: transparent;
+                    }
+
+                *{
+                color : rgb(128, 17, 128)}
+            }
+            .callbtn:hover{
+                background-color: $secondary;
+                cursor:pointer;
+            }
+
+
+    border-bottom: solid 1.2px rgba($color: #000000, $alpha: 0.08);
+
+        }
+
+        .chatbox {
+max-height: 100%;
+            gap: 4px ;
+            overflow-y: auto;
+
+
+
+
+            .msg-gray{
+display: flex;
+padding: 8px 16px;
+align-items: flex-start;
+gap: 10px;
+background-color: $secondary;
+border-radius: 12px;
+background: #F1F1F1;
+
+
+            }
+.m-me{
+
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    gap : 5px ;
+    padding: 0px;
+}
+.m-freind{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+
+}
+
+
+
+
+            .msg-purple{
+                align-self: end;
+                order: -1;
+                display: flex;
+padding: 8px 16px;
+align-items: flex-start;
+gap: 10px;
+background-color: $primary;
+border-radius: 12px;
+background: $primary;
+
+p{
+color: white !important; }
+
+            }
+
+
+
+ 
+}
+
+
+
+.input {
+         height: 10vh;   
+
+        }
+
+
+
+
+}

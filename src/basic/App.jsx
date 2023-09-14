@@ -1,11 +1,12 @@
 // import "./App.css";
 import "../styles/_style.scss";
-import Navbar from "../component/navbar";
+import Chat from "../pages/chat";
+
 
 function App() {
   return (
     <div className="app">
-      <Navbar></Navbar>
+      <Chat></Chat>
     </div>
   );
 }

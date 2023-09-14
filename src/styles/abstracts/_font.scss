@@ -1,8 +1,10 @@
 @use "variables" as * ;
 
 @mixin font($size, $color, $weight) {
-  display: block;
-  // margin: auto ;
+  // padding: 0 0 0 0 ;
+  // display: block;
+  margin-top: auto ;
+  margin-bottom: auto ;
   font-family: inter ;
   font-style: normal;
   color: $color;
@@ -16,10 +18,12 @@
   .head {
     @include font($fbig , black , $wbold) ;
   }
+  
 
-  .chat{
+  .chatfont{
     @include font($fmedium , black , $wnormal) ;
     &-w{
+      @extend .chatfont ;
       color: white ;
     }
 
@@ -29,7 +33,7 @@
   .minibold{
     @include font($fmedium , black , $wbold) ;
         &-sub {
-    @include font($fsmall , black , $wbold) ;
+    @include font($fsmall , $secondary , $wbold) ;
           
         }
   }

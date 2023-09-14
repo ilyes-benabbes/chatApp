@@ -8,7 +8,7 @@ function navbar() {
     <>
       <div className="Navbar row-between">
         <Mylogo></Mylogo>
-        <div className="head links flex-row-r ">
+        <div className="head links row g3 ">
           <p> dashboard </p>
           <p > home </p>
           <p > contact us </p>
